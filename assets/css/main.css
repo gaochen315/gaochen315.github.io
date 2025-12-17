@@ -316,3 +316,118 @@ a:after {
 sm {
 	font-size: 12px;
 }
+
+
+/* ===== Publication Cards ===== */
+.pub-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.pub-card .pub-media video,
+.pub-card .pub-media img {
+  border-radius: 10px;
+}
+
+/* spacing only, do NOT touch font */
+.pub-card .pub-content p {
+  margin-bottom: 8px;
+}
+
+/* keep your original title style */
+.pub-card .pub-title {
+  margin-bottom: 6px;
+}
+
+/* ===== News list ===== */
+.news-list {
+  margin-top: 4px;
+}
+
+.news-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.news-tag {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.news-text {
+  flex: 1;
+}
+
+
+/* ===== About section (layout only) ===== */
+.about-avatar {
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.about-links {
+  margin-top: 6px;
+}
+
+
+
+/* ===== Education / Industry layout only ===== */
+.edu-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.edu-item {
+  width: 160px;
+  text-align: center;
+}
+
+.edu-logo {
+  margin: 0 auto 10px;
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* ===== Section vertical rhythm ===== */
+.container.desc {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container.desc hr {
+  margin-top: 30px;
+}
+
+
+/* ===== Misc section layout only ===== */
+.misc-item {
+  margin-bottom: 20px;
+}
+
+.misc-list {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+
+/* ===== Footer polish ===== */
+#footwrap {
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.footer-social a {
+  margin-right: 8px;
+}
+
+.footer-counter {
+  margin-top: 8px;
+}
