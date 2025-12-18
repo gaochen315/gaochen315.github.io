@@ -37,39 +37,61 @@
   <![endif]-->
 </head>
 
-  <body data-spy="scroll" data-offset="70" data-target="#nav">
+<body data-spy="scroll" data-offset="70" data-target="#nav">
 
-    <nav id="section-topbar">
-        <div id="topbar-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="dropdown">
-                        <ul id="nav" class="nav">
-                            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-                            <li class="menu-item"><a class="page-scroll" href="index.html#about" title="About">About</a></li>
-                            <li class="menu-item"><a class="page-scroll" href="index.html#news"  title="News">News</a></li>
-                            <li class="menu-item"><a class="page-scroll" href="index.html#paper" title="Paper">Publications</a></li>
-                            <li class="menu-item"><a class="page-scroll" href="index.html#misc"  title="Misc">Misc</a></li>
-                            <li class="menu-item"><a class="page-scroll" href="Art.html"  title="Blog">Art</a></li>
-                        </ul><!--/ uL#nav -->
-                    </div><!-- /.dropdown -->
+  <nav id="section-topbar"
+       class="nav-primary"
+       aria-label="Primary navigation">
+    <div id="topbar-inner">
+      <div class="container">
 
-                    <div class="clear"></div>
-                </div><!--/.row -->
-            </div><!--/.container -->
+        <ul id="nav" class="nav">
+          <li class="menu-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="#paper">Publications</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="#misc">Misc</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="Art.html">Art</a>
+          </li>
+        </ul>
 
-            <div class="clear"></div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <header id="headerwrap">
+
+
+    <header class="hero">
       <div class="container">
         <div class="row centered">
-          <div class="col-lg-12">
-            <h1>Chen Gao | 髙諶</h1>
-            <h3>Research Scientist at Meta Reality Labs</h3><br/><br/>
-            <h4><b>Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you. </b></h4>
-            <h4><b>1 Peter 5: 6-7</b></h4>
+          <div class="col-lg-12 hero-content">
+
+            <h1 class="hero-title">Chen Gao | 髙諶</h1>
+
+            <h3 class="hero-subtitle">
+              Research Scientist at Meta Reality Labs
+            </h3>
+
+            <div class="hero-verse">
+              <h4 class="hero-verse-text">
+                <b>
+                  Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you,
+                  casting all your anxieties on him, because he cares for you.
+                </b>
+              </h4>
+              <h4 class="hero-verse-ref">
+                <b>1 Peter 5: 6-7</b>
+              </h4>
+            </div>
+
           </div>
         </div>
       </div>
@@ -88,7 +110,7 @@
 
           <!-- Text -->
           <div class="col-lg-9 col-md-8">
-            <p>
+            <p class="about-intro">
               I am a research scientist at Meta, working on immersive 3D and 4D experiences. My research focuses on dynamic view synthesis and high-fidelity 3D scene representation.
             </p>
 
@@ -647,7 +669,7 @@
 
 
 
-    <!--EDUCATION DESCRIPTION -->
+    <!-- EDUCATION DESCRIPTION -->
     <section id="education" class="container desc">
       <div class="row">
         <div class="col-lg-2 col-lg-offset-0">
@@ -659,25 +681,25 @@
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/vt.png" alt="">
-              <p class="text-center">
-                Virginia Tech <br/>
-                Doctor of Philosophy
+              <p class="edu-text text-center">
+                <span class="edu-school">Virginia Tech</span>
+                <span class="edu-degree">Doctor of Philosophy</span>
               </p>
             </div>
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/umich.png" alt="">
-              <p class="text-center">
-                University of Michigan <br/>
-                Master of Science
+              <p class="edu-text text-center">
+                <span class="edu-school">University of Michigan</span>
+                <span class="edu-degree">Master of Science</span>
               </p>
             </div>
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/osu_.png" alt="">
-              <p class="text-center">
-                Oregon State University <br/>
-                Bachelor of Science
+              <p class="edu-text text-center">
+                <span class="edu-school">Oregon State University</span>
+                <span class="edu-degree">Bachelor of Science</span>
               </p>
             </div>
 
@@ -686,6 +708,7 @@
       </div>
       <hr>
     </section>
+
 
 
     <section class="container desc">
@@ -699,33 +722,33 @@
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/Meta.png" alt="">
-              <p class="text-center">
-                Research Scientist <br/>
-                2022 - Present
+              <p class="edu-text text-center">
+                <span class="edu-school">Research Scientist</span>
+                <span class="edu-degree">2022 – Present</span>
               </p>
             </div>
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/google.png" alt="">
-              <p class="text-center">
-                Research Intern <br/>
-                Summer 2021
+              <p class="edu-text text-center">
+                <span class="edu-school">Research Intern</span>
+                <span class="edu-degree">Summer 2021</span>
               </p>
             </div>
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/google.png" alt="">
-              <p class="text-center">
-                Research Intern <br/>
-                Summer 2020
+              <p class="edu-text text-center">
+                <span class="edu-school">Research Intern</span>
+                <span class="edu-degree">Summer 2020</span>
               </p>
             </div>
 
             <div class="edu-item">
               <img class="img-responsive edu-logo" src="assets/img/facebook.png" alt="">
-              <p class="text-center">
-                Research Intern <br/>
-                Summer 2019
+              <p class="edu-text text-center">
+                <span class="edu-school">Research Intern</span>
+                <span class="edu-degree">Summer 2019</span>
               </p>
             </div>
 
@@ -734,6 +757,7 @@
       </div>
       <hr>
     </section>
+
 
 
     <section id="misc" class="container desc">
