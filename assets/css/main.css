@@ -337,6 +337,10 @@ section[id] {
   opacity: 0.85;
 }
 
+.edu-school,
+.edu-degree {
+  display: block;
+}
 
 /* ==================================================
    10. Misc
