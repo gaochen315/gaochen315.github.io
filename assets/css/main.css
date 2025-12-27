@@ -10,7 +10,7 @@
 body {
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   color: #555;
   -webkit-font-smoothing: antialiased;
@@ -130,7 +130,7 @@ section[id] {
    ================================================== */
 
 .hero {
-  background: url(../img/header-bg.jpg) no-repeat center center;
+  background: #333 url(../img/header-bg.jpg) no-repeat center center;
   background-size: cover;
   margin-top: 40px;
   padding-top: 140px;
