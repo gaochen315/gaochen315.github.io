@@ -281,8 +281,32 @@ section[id] {
   margin-bottom: 8px;
 }
 
+.pub-content p:last-child {
+  margin-bottom: 0;
+}
+
 .pub-authors {
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.01em;
+}
+
+.pub-authors .author-me {
+  font-weight: 700;
+  color: #000;
+}
+
+.pub-venue {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.pub-links {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 @media (max-width: 992px) {
