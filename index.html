@@ -39,6 +39,23 @@
 
 <body data-spy="scroll" data-offset="70" data-target="#nav">
 
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10Z" />
+    </symbol>
+
+    <symbol id="icon-project" viewBox="0 0 24 24">
+      <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Zm0 0c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3 7.5 7.03 7.5 12 9.515 21 12 21ZM3 12h18" />
+    </symbol>
+
+    <symbol id="icon-doc" viewBox="0 0 24 24">
+      <path d="M19.5 14.25V8.625A3.375 3.375 0 0 0 16.125 5.25H9.75A3.375 3.375 0 0 0 6.375 8.625v11.25A3.375 3.375 0 0 0 9.75 23.25h6.375A3.375 3.375 0 0 0 19.5 19.875V14.25Z" />
+      <path d="M9 9.75h6M9 13.5h6M9 17.25h4.5" />
+    </symbol>
+
+  </svg>
+
   <nav id="section-topbar"
        class="nav-primary"
        aria-label="Primary navigation">
@@ -243,7 +260,30 @@
               </p>
               <p class="pub-venue">CVPR, 2025</p>
               <p class="pub-links">
-                <a href="https://textured-gaussians.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2411.18625" target="_blank">arXiv</a>
+                <a href="https://textured-gaussians.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://arxiv.org/pdf/2411.18625" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://github.com/bchao1/textured_gaussians?tab=readme-ov-file" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -267,7 +307,21 @@
               </p>
               <p class="pub-venue">SIGGRAPH Asia, 2024</p>
               <p class="pub-links">
-                <a href="https://ra-nerf.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2411.04984" target="_blank">arXiv</a>
+                <a href="https://ra-nerf.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://arxiv.org/pdf/2411.04984" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
               </p>
             </div>
           </div>
@@ -291,7 +345,21 @@
               </p>
               <p class="pub-venue">SIGGRAPH, 2024</p>
               <p class="pub-links">
-                <a href="https://ambientgaussian.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2406.09395" target="_blank">arXiv</a>
+                <a href="https://ambientgaussian.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://arxiv.org/pdf/2406.09395" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
               </p>
             </div>
           </div>
@@ -315,7 +383,21 @@
               </p>
               <p class="pub-venue">CVPR, 2024</p>
               <p class="pub-links">
-                <a href="https://limacv.github.io/SpecNeRF_web/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2312.13102" target="_blank">arXiv</a>
+                <a href="https://limacv.github.io/SpecNeRF_web/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://arxiv.org/pdf/2312.13102" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
               </p>
             </div>
           </div>
@@ -339,10 +421,35 @@
               </p>
               <p class="pub-venue">ICCV, 2023</p>
               <p class="pub-links">
-                <a href="https://omnimatte-rf.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2309.07749.pdf" target="_blank">arXiv</a> / <a href="https://github.com/facebookresearch/OmnimatteRF" target="_blank">code</a>
+                <a href="https://omnimatte-rf.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://arxiv.org/pdf/2309.07749.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+
+                <span class="pub-links-sep"></span>
+
+                <a href="https://github.com/facebookresearch/OmnimatteRF" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
+
+
 
           <!-- LocalRF -->
           <div class="pub-card row pub-highlight">
@@ -363,7 +470,26 @@
               </p>
               <p class="pub-venue">CVPR, 2023</p>
               <p class="pub-links">
-                <a href="https://localrf.github.io/" target="_blank">project page</a> / <a href="https://localrf.github.io/localrf.pdf" target="_blank">arXiv</a> / <a href="https://github.com/facebookresearch/localrf" target="_blank">code</a>
+                <a href="https://localrf.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://localrf.github.io/localrf.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/facebookresearch/localrf" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -388,7 +514,26 @@
               </p>
               <p class="pub-venue">CVPR, 2023</p>
               <p class="pub-links">
-                <a href="https://robust-dynrf.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2301.02239.pdf" target="_blank">arXiv</a> / <a href="https://github.com/facebookresearch/robust-dynrf" target="_blank">code</a>
+                <a href="https://robust-dynrf.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2301.02239.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/facebookresearch/robust-dynrf" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -411,7 +556,26 @@
               </p>
               <p class="pub-venue">ICCV, 2021</p>
               <p class="pub-links">
-                <a href="https://free-view-video.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2105.06468.pdf" target="_blank">arXiv</a> / <a href="https://github.com/gaochen315/DynamicNeRF" target="_blank">code</a>
+                <a href="https://free-view-video.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2105.06468.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/gaochen315/DynamicNeRF" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -435,7 +599,19 @@
               </p>
               <p class="pub-venue">arXiv, 2020</p>
               <p class="pub-links">
-                <a href="https://portrait-nerf.github.io/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2012.05903.pdf" target="_blank">arXiv</a>
+                <a href="https://portrait-nerf.github.io/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2012.05903.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
               </p>
             </div>
           </div>
@@ -458,7 +634,26 @@
               </p>
               <p class="pub-venue">ECCV, 2020</p>
               <p class="pub-links">
-                <a href="https://gaochen315.github.io/FGVC/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2009.01835.pdf" target="_blank">arXiv</a> / <a href="https://github.com/vt-vl-lab/FGVC" target="_blank">code</a>
+                <a href="https://gaochen315.github.io/FGVC/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2009.01835.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/vt-vl-lab/FGVC" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -481,7 +676,26 @@
               </p>
               <p class="pub-venue">ECCV, 2020</p>
               <p class="pub-links">
-                <a href="http://chengao.vision/DRG/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2008.11714.pdf" target="_blank">arXiv</a> / <a href="https://github.com/vt-vl-lab/DRG" target="_blank">code</a>
+                <a href="http://chengao.vision/DRG/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2008.11714.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/vt-vl-lab/DRG" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -502,7 +716,26 @@
               </p>
               <p class="pub-venue">ECCV, 2020</p>
               <p class="pub-links">
-                <a href="https://yunchunchen.github.io/NAS-DIP/" target="_blank">project page</a> / <a href="https://arxiv.org/pdf/2008.11713.pdf" target="_blank">arXiv</a> / <a href="https://github.com/YunChunChen/NAS-DIP-pytorch" target="_blank">code</a>
+                <a href="https://yunchunchen.github.io/NAS-DIP/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/pdf/2008.11713.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/YunChunChen/NAS-DIP-pytorch" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -523,7 +756,26 @@
               </p>
               <p class="pub-venue">NeurIPS, 2019</p>
               <p class="pub-links">
-                <a href="http://chengao.vision/SDN/" target="_blank">project page</a> / <a href="http://papers.nips.cc/paper/8372-why-cant-i-dance-in-the-mall-learning-to-mitigate-scene-bias-in-action-recognition.pdf" target="_blank">arXiv</a> / <a href="https://github.com/vt-vl-lab/SDN" target="_blank">code</a>
+                <a href="http://chengao.vision/SDN/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="http://papers.nips.cc/paper/8372-why-cant-i-dance-in-the-mall-learning-to-mitigate-scene-bias-in-action-recognition.pdf" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/vt-vl-lab/SDN" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -544,7 +796,26 @@
               </p>
               <p class="pub-venue">BMVC, 2018</p>
               <p class="pub-links">
-                <a href="https://gaochen315.github.io/iCAN/" target="_blank">project page</a> / <a href="https://arxiv.org/abs/1808.10437" target="_blank">arXiv</a> / <a href="https://github.com/vt-vl-lab/iCAN" target="_blank">code</a>
+                <a href="https://gaochen315.github.io/iCAN/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/abs/1808.10437" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/vt-vl-lab/iCAN" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -565,7 +836,26 @@
               </p>
               <p class="pub-venue">IEEE Transactions on Computational Imaging, 2019</p>
               <p class="pub-links">
-                <a href="https://gaochen315.github.io/pRPCA/" target="_blank">project page</a> / <a href="https://arxiv.org/abs/1712.06229" target="_blank">arXiv</a> / <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank">code</a>
+                <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/abs/1712.06229" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
@@ -586,7 +876,26 @@
               </p>
               <p class="pub-venue">GlobalSIP, 2017 (Oral)</p>
               <p class="pub-links">
-                <a href="https://gaochen315.github.io/pRPCA/" target="_blank">project page</a> / <a href="https://arxiv.org/abs/1709.09328" target="_blank">arXiv</a> / <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank">code</a>
+                <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-project"></use>
+                  </svg>
+                  Project
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://arxiv.org/abs/1709.09328" target="_blank" rel="noopener">
+                  <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  arXiv
+                </a>
+                <span class="pub-links-sep"></span>
+                <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
+                  <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-github"></use>
+                  </svg>
+                  code
+                </a>
               </p>
             </div>
           </div>
