@@ -265,9 +265,32 @@ section[id] {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
+.pub-media {
+  width: 280px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  flex: 0 1 auto;
+}
+
 .pub-media img,
 .pub-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  .pub-item {
+    flex-direction: column;
+  }
+
+  .pub-media {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .pub-title-text {
