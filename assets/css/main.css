@@ -82,18 +82,19 @@ p {
 }
 
 #section-topbar ul#nav {
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 #section-topbar ul#nav>li {
-  float: left;
+  float: none;
 }
 
 #section-topbar ul#nav a {
   display: block;
-  padding: 20px 24px;
+  padding: 12px 24px;
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
@@ -114,6 +115,13 @@ p {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
+
+@media (max-width: 768px) {
+  #section-topbar ul#nav a {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+}
 
 /* ==================================================
    4. Section Layout
@@ -137,8 +145,8 @@ section[id] {
   background: #333 url(../img/header-bg.jpg) no-repeat center center;
   background-size: cover;
   margin-top: 40px;
-  padding-top: 140px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -172,6 +180,7 @@ section[id] {
 .hero-verse-ref {
   font-size: 14px;
   margin-top: 8px;
+  margin-bottom: 0;
   color: #ffffff;
   text-align: right;
 }
