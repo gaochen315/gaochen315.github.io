@@ -136,6 +136,15 @@ section[id] {
   margin-bottom: 48px;
 }
 
+/* Avoid Bootstrap's breakpoint width jumps on desktop/tablet.
+   Keep a fluid container that grows smoothly with viewport width. */
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 80px);
+    max-width: 1140px;
+  }
+}
+
 
 /* ==================================================
    5. Hero
@@ -329,9 +338,18 @@ section[id] {
 
   .pub-media {
     width: 100%;
+    flex: 0 0 auto;
     margin-right: 0;
     margin-bottom: 20px;
     max-width: none;
+    aspect-ratio: auto;
+    overflow: visible;
+  }
+
+  .pub-media img,
+  .pub-media video {
+    height: auto;
+    object-fit: contain;
   }
 }
 
