@@ -35,7 +35,7 @@ a:focus {
 hr {
   border: 0;
   border-top: 1px solid #ccc;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 
@@ -53,6 +53,7 @@ h6 {
   font-weight: 300;
   color: #333;
   margin-top: 0;
+  margin-bottom: 16px;
 }
 
 p {
@@ -132,8 +133,8 @@ section[id] {
 }
 
 .container.desc {
-  margin-top: 36px;
-  margin-bottom: 48px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 
 /* Avoid Bootstrap's breakpoint width jumps on desktop/tablet.
@@ -242,7 +243,7 @@ section[id] {
 .news-row {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .news-tag {
@@ -288,11 +289,21 @@ section[id] {
 .pub-card {
   background: #ffffff;
   border-radius: 14px;
+  border: 1px solid rgba(31, 41, 55, 0.08);
   padding: 20px 18px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pub-card:hover,
+.pub-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border-color: rgba(31, 41, 55, 0.16);
 }
 
 .pub-card:before,
@@ -329,6 +340,9 @@ section[id] {
 .pub-content {
   flex: 1;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -354,10 +368,10 @@ section[id] {
 }
 
 .pub-title-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #34495e;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.38;
+  color: #1f2a37;
 }
 
 .pub-content p {
@@ -370,9 +384,9 @@ section[id] {
 
 .pub-authors {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.45;
   font-weight: 400;
-  color: #555;
+  color: #667085;
   letter-spacing: 0.01em;
 }
 
@@ -383,8 +397,9 @@ section[id] {
 
 .pub-venue {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
+  color: #475467;
 }
 
 .pub-links {
@@ -477,13 +492,13 @@ section[id] {
    ================================================== */
 
 .misc-item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .misc-title {
   font-weight: 700;
   font-size: 15px;
-  color: #34495e;
+  color: #1f2a37;
 }
 
 .misc-list {
@@ -497,8 +512,8 @@ section[id] {
 
 #footwrap {
   background: #1a252f;
-  padding: 50px 0 30px;
-  margin-top: 60px;
+  padding: 48px 0 32px;
+  margin-top: 56px;
 }
 
 #footwrap p,
