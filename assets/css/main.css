@@ -403,14 +403,16 @@ section[id] {
 }
 
 .pub-links {
-  font-size: 14px;
-  line-height: 1.35;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .pub-links a {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   white-space: nowrap;
 }
 
@@ -436,8 +438,8 @@ section[id] {
 }
 
 .pub-links-sep {
-  margin: 0 8px;
-  opacity: 0.45;
+  margin: 0 7px;
+  opacity: 0.35;
 }
 
 
