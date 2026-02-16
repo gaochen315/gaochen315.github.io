@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Raleway:wght@300;400;700&amp;display=swap"
     rel="stylesheet">
 
   <!-- CSS -->
@@ -87,28 +87,26 @@
 
   <header class="hero">
     <div class="container">
-      <div class="row centered">
-        <div class="col-lg-12 hero-content">
+      <div class="hero-content centered">
 
-          <h1 class="hero-title">Chen Gao | 髙諶</h1>
+        <h1 class="hero-title">Chen Gao | 髙諶</h1>
 
-          <p class="hero-subtitle">
-            Research Scientist at Meta Reality Labs
+        <p class="hero-subtitle">
+          Research Scientist at Meta Reality Labs
+        </p>
+
+        <div class="hero-verse">
+          <p class="hero-verse-text">
+            <strong>
+              Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you,
+              casting all your anxieties on him, because he cares for you.
+            </strong>
           </p>
-
-          <div class="hero-verse">
-            <p class="hero-verse-text">
-              <strong>
-                Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you,
-                casting all your anxieties on him, because he cares for you.
-              </strong>
-            </p>
-            <p class="hero-verse-ref">
-              <strong>1 Peter 5: 6-7</strong>
-            </p>
-          </div>
-
+          <p class="hero-verse-ref">
+            <strong>1 Peter 5: 6-7</strong>
+          </p>
         </div>
+
       </div>
     </div>
   </header>
@@ -117,32 +115,27 @@
     <div id="intro">
       <div class="container">
 
-        <div class="row">
+        <div class="about-row">
 
           <!-- Avatar -->
-          <div class="col-lg-3 col-md-4">
+          <div class="about-media">
             <img class="img-responsive about-avatar" src="assets/img/chengao.jpg" alt="Portrait of Chen Gao">
           </div>
 
           <!-- Text -->
-          <div class="col-lg-9 col-md-8">
+          <div class="about-body">
             <p class="about-intro">
-              I am a Research Scientist at Meta, working on immersive 3D and 4D experiences. My research focuses on
-              high-fidelity view synthesis, combining diffusion models with 3D/4D scene representations.
-            </p>
-
-            <p>
-              I received my Ph.D. from Virginia Tech in 2022, where I was advised by <a
-                href="https://jbhuang0604.github.io/" target="_blank" rel="noopener">Jia-Bin Huang</a>. Before that, I
-              earned my
-              Master’s degree from
-              the University of Michigan and my Bachelor’s degree from Oregon State University.
+              I am a Research Scientist at Meta working on high-fidelity 3D/4D reconstruction (<a
+                href="https://www.youtube.com/live/D97ILdUbYww?si=eTQ5NUHW4DrA85lL&amp;t=4083" target="_blank"
+                rel="noopener">Hyperscape</a>) and generative 3D AI. I received my PhD from Virginia Tech supervised by
+              <a href="https://jbhuang0604.github.io/" target="_blank" rel="noopener">Jia-Bin Huang</a>. I received my
+              MSc from University of Michigan and my BSc from Oregon State University.
             </p>
 
             <p class="about-links">
               <a href="mailto:gaochen315@gmail.com">Email</a> &nbsp;/&nbsp;
               <a href="Files/CV_ChenGao.pdf">CV</a> &nbsp;/&nbsp;
-              <a href="https://scholar.google.com/citations?user=xRsWVc4AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+              <a href="https://scholar.google.com/citations?user=xRsWVc4AAAAJ&amp;hl=en">Scholar</a> &nbsp;/&nbsp;
               <a href="https://twitter.com/gaochen315">Twitter</a> &nbsp;/&nbsp;
               <a href="https://github.com/gaochen315">Github</a>
             </p>
@@ -150,16 +143,17 @@
 
         </div>
       </div>
+    </div>
   </section>
 
 
   <section id="news" class="container desc">
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-0">
+    <div class="news-layout">
+      <div class="news-heading">
         <h5>NEWS</h5>
       </div>
 
-      <div class="col-lg-10">
+      <div class="news-main">
         <div class="news-list">
 
           <div class="news-row">
@@ -168,7 +162,7 @@
             </div>
             <div class="news-text">
               Mark Zuckerberg just unveiled our team’s <a
-                href="https://www.youtube.com/live/D97ILdUbYww?si=eTQ5NUHW4DrA85lL&t=4083" target="_blank"
+                href="https://www.youtube.com/live/D97ILdUbYww?si=eTQ5NUHW4DrA85lL&amp;t=4083" target="_blank"
                 rel="noopener">Hyperscape</a>
               at Meta Connect 2025!
             </div>
@@ -233,688 +227,679 @@
     </div>
     <hr>
   </section>
-
-
-
   <section id="paper" class="container desc">
-
-    <div class="row">
-      <div class="col-lg-12">
-        <h5>PUBLICATION</h5>
-      </div>
+    <div class="paper-header">
+      <h5>PUBLICATION</h5>
     </div>
 
-    <div class="row">
-      <div class="col-lg-12">
-
-        <!-- Textured Gaussians -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://jbhuang0604.github.io/images/projects/arXiv%202024%20Textured%20Gaussians.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Textured Gaussians for Enhanced 3D Scene Appearance Modeling
-              </span>
-            </p>
-            <p class="pub-authors">
-              Brian Chao, Hung-Yu Tseng, Lorenzo Porzi, <span class="author-me">Chen Gao</span>, Tuotuo Li,
-              Qinbo Li, Ayush Saraf, Jia-Bin Huang, Johannes Kopf,
-              Gordon Wetzstein, Changil Kim
-            </p>
-            <p class="pub-venue">CVPR, 2025</p>
-            <p class="pub-links">
-              <a href="https://textured-gaussians.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://arxiv.org/pdf/2411.18625" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://github.com/bchao1/textured_gaussians?tab=readme-ov-file" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
+    <div class="paper-main">
+      <!-- Textured Gaussians -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://jbhuang0604.github.io/images/projects/arXiv%202024%20Textured%20Gaussians.mp4"
+              type="video/mp4">
+          </video>
         </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Textured Gaussians for Enhanced 3D Scene Appearance Modeling
+            </span>
+          </p>
+          <p class="pub-authors">
+            Brian Chao, Hung-Yu Tseng, Lorenzo Porzi, <span class="author-me">Chen Gao</span>, Tuotuo Li,
+            Qinbo Li, Ayush Saraf, Jia-Bin Huang, Johannes Kopf,
+            Gordon Wetzstein, Changil Kim
+          </p>
+          <p class="pub-venue">CVPR, 2025</p>
+          <p class="pub-links">
+            <a href="https://textured-gaussians.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
 
-        <!-- Reflection-Aware NeRF -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://ra-nerf.github.io/supp/results/Ours/composite/game_room_composite.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Reflection-Aware Neural Radiance Fields
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Yipeng Wang, Changil Kim,
-              Jia-Bin Huang, Johannes Kopf
-            </p>
-            <p class="pub-venue">SIGGRAPH Asia, 2024</p>
-            <p class="pub-links">
-              <a href="https://ra-nerf.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
+            <span class="pub-links-sep"></span>
 
-              <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2411.18625" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
 
-              <a href="https://arxiv.org/pdf/2411.04984" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-            </p>
-          </div>
+            <span class="pub-links-sep"></span>
+
+            <a href="https://github.com/bchao1/textured_gaussians?tab=readme-ov-file" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
         </div>
-
-        <!-- Ambient Gaussian -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source
-                src="https://ambientgaussian.github.io/siggraph2024/more_results/IMG_0017/merge-wo-reconstruction.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Modeling Ambient Scene Dynamics for Free-view Synthesis
-              </span>
-            </p>
-            <p class="pub-authors">
-              Meng-Li Shih, Jia-Bin Huang, Changil Kim,
-              Rajvi Shah, Johannes Kopf, <span class="author-me">Chen Gao</span>
-            </p>
-            <p class="pub-venue">SIGGRAPH, 2024</p>
-            <p class="pub-links">
-              <a href="https://ambientgaussian.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://arxiv.org/pdf/2406.09395" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-            </p>
-          </div>
-        </div>
-
-
-        <!-- SpecNeRF -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="https://limacv.github.io/SpecNeRF_web/images/teaser.jpg"
-              alt="SpecNeRF project teaser image">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                SpecNeRF: Gaussian Directional Encoding for Specular Reflections
-              </span>
-            </p>
-            <p class="pub-authors">
-              Li Ma, Vasu Agrawal, Haithem Turki, Changil Kim,
-              <span class="author-me">Chen Gao</span>, Pedro V. Sander,
-              Michael Zollhöfer, Christian Richardt
-            </p>
-            <p class="pub-venue">CVPR, 2024</p>
-            <p class="pub-links">
-              <a href="https://limacv.github.io/SpecNeRF_web/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://arxiv.org/pdf/2312.13102" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- OmnimatteRF -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://omnimatte-rf.github.io/demo/demo4.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                OmnimatteRF: Robust Omnimatte with 3D Background Modeling
-              </span>
-            </p>
-            <p class="pub-authors">
-              Geng Lin, <span class="author-me">Chen Gao</span>, Jia-Bin Huang,
-              Changil Kim, Yipeng Wang, Matthias Zwicker, Ayush Saraf
-            </p>
-            <p class="pub-venue">ICCV, 2023</p>
-            <p class="pub-links">
-              <a href="https://omnimatte-rf.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://arxiv.org/pdf/2309.07749.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-
-              <span class="pub-links-sep"></span>
-
-              <a href="https://github.com/facebookresearch/OmnimatteRF" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-
-
-        <!-- LocalRF -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://localrf.github.io/videos/forest1_ours.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Progressively Optimized Local Radiance Fields for Robust View Synthesis
-              </span>
-            </p>
-            <p class="pub-authors">
-              Andreas Meuleman, Yu-Lun Liu, <span class="author-me">Chen Gao</span>,
-              Jia-Bin Huang, Changil Kim, Min H. Kim, Johannes Kopf
-            </p>
-            <p class="pub-venue">CVPR, 2023</p>
-            <p class="pub-links">
-              <a href="https://localrf.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://localrf.github.io/localrf.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/facebookresearch/localrf" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Robust Dynamic Radiance Fields -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://robust-dynrf.github.io/static/videos/outputvideo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Robust Dynamic Radiance Fields
-              </span>
-            </p>
-            <p class="pub-authors">
-              Yu-Lun Liu, <span class="author-me">Chen Gao</span>, Andreas Meuleman,
-              Hung-Yu Tseng, Ayush Saraf, Changil Kim,
-              Yung-Yu Chuang, Johannes Kopf, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">CVPR, 2023</p>
-            <p class="pub-links">
-              <a href="https://robust-dynrf.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2301.02239.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/facebookresearch/robust-dynrf" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Dynamic View Synthesis -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://free-view-video.github.io/results/free-view-video.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Dynamic View Synthesis from Dynamic Monocular Video
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Ayush Saraf, Johannes Kopf, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">ICCV, 2021</p>
-            <p class="pub-links">
-              <a href="https://free-view-video.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2105.06468.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/gaochen315/DynamicNeRF" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Portrait NeRF -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="assets/img/pnerf.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Portrait Neural Radiance Fields from a Single Image
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Yichang Shih, Wei-Sheng Lai,
-              Chia-Kai Liang, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">arXiv, 2020</p>
-            <p class="pub-links">
-              <a href="https://portrait-nerf.github.io/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2012.05903.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Flow-edge Guided Video Completion -->
-        <div class="pub-card row pub-highlight">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="https://gaochen315.github.io/FGVC/ECCV2020/teaser.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Flow-edge Guided Video Completion
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Ayush Saraf, Jia-Bin Huang, Johannes Kopf
-            </p>
-            <p class="pub-venue">ECCV, 2020</p>
-            <p class="pub-links">
-              <a href="https://gaochen315.github.io/FGVC/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2009.01835.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/vt-vl-lab/FGVC" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- DRG -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <video class="img-responsive" muted autoplay loop playsinline>
-              <source src="assets/img/DRG.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                DRG: Dual Relation Graph for Human-Object Interaction Detection
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Jiarui Xu, Yuliang Zou, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">ECCV, 2020</p>
-            <p class="pub-links">
-              <a href="http://chengao.vision/DRG/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2008.11714.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/vt-vl-lab/DRG" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- NAS-DIP -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="assets/img/NAS-DIP.gif" alt="NAS-DIP project teaser animation">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                NAS-DIP: Learning Deep Image Prior with Neural Architecture Search
-              </span>
-            </p>
-            <p class="pub-authors">
-              Yun-Chun Chen*, <span class="author-me">Chen Gao*</span>, Esther Robb, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">ECCV, 2020</p>
-            <p class="pub-links">
-              <a href="https://yunchunchen.github.io/NAS-DIP/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/pdf/2008.11713.pdf" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/YunChunChen/NAS-DIP-pytorch" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- SDN -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="assets/img/SDN.gif" alt="SDN project teaser animation">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Why Can't I Dance in the Mall? Learning to Mitigate Scene Bias in Action Recognition
-              </span>
-            </p>
-            <p class="pub-authors">
-              Jinwoo Choi, <span class="author-me">Chen Gao</span>, Joseph Messou, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">NeurIPS, 2019</p>
-            <p class="pub-links">
-              <a href="http://chengao.vision/SDN/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="http://papers.nips.cc/paper/8372-why-cant-i-dance-in-the-mall-learning-to-mitigate-scene-bias-in-action-recognition.pdf"
-                target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/vt-vl-lab/SDN" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- iCAN -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="assets/img/HOI.gif"
-              alt="iCAN human-object interaction project teaser animation">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                iCAN: Instance-Centric Attention Network for Human-Object Interaction Detection
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Yuliang Zou, Jia-Bin Huang
-            </p>
-            <p class="pub-venue">BMVC, 2018</p>
-            <p class="pub-links">
-              <a href="https://gaochen315.github.io/iCAN/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/abs/1808.10437" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/vt-vl-lab/iCAN" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- pRPCA -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="assets/img/pRPCA.gif" alt="Panoramic Robust PCA project teaser animation">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Panoramic Robust PCA for Foreground-Background Separation on Noisy, Free-Motion Camera Video
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao*</span>, Brian E. Moore*, Raj Rao Nadakuditi
-            </p>
-            <p class="pub-venue">IEEE Transactions on Computational Imaging, 2019</p>
-            <p class="pub-links">
-              <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/abs/1712.06229" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Augmented RPCA -->
-        <div class="pub-card row">
-          <div class="col-lg-3 pub-media">
-            <img class="img-responsive" src="assets/img/RPCA.gif" alt="Augmented Robust PCA project teaser animation">
-          </div>
-          <div class="col-lg-8 pub-content">
-            <p class="pub-title">
-              <span class="pub-title-text">
-                Augmented Robust PCA For Foreground-Background Separation on Noisy, Moving Camera Video
-              </span>
-            </p>
-            <p class="pub-authors">
-              <span class="author-me">Chen Gao</span>, Brian E. Moore, Raj Rao Nadakuditi
-            </p>
-            <p class="pub-venue">GlobalSIP, 2017 (Oral)</p>
-            <p class="pub-links">
-              <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-project"></use>
-                </svg>
-                Project
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://arxiv.org/abs/1709.09328" target="_blank" rel="noopener">
-                <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-doc"></use>
-                </svg>
-                arXiv
-              </a>
-              <span class="pub-links-sep"></span>
-              <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
-                <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
-                  <use href="#icon-github"></use>
-                </svg>
-                code
-              </a>
-            </p>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Reflection-Aware NeRF -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://ra-nerf.github.io/supp/results/Ours/composite/game_room_composite.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Reflection-Aware Neural Radiance Fields
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Yipeng Wang, Changil Kim,
+            Jia-Bin Huang, Johannes Kopf
+          </p>
+          <p class="pub-venue">SIGGRAPH Asia, 2024</p>
+          <p class="pub-links">
+            <a href="https://ra-nerf.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+
+            <span class="pub-links-sep"></span>
+
+            <a href="https://arxiv.org/pdf/2411.04984" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Ambient Gaussian -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source
+              src="https://ambientgaussian.github.io/siggraph2024/more_results/IMG_0017/merge-wo-reconstruction.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Modeling Ambient Scene Dynamics for Free-view Synthesis
+            </span>
+          </p>
+          <p class="pub-authors">
+            Meng-Li Shih, Jia-Bin Huang, Changil Kim,
+            Rajvi Shah, Johannes Kopf, <span class="author-me">Chen Gao</span>
+          </p>
+          <p class="pub-venue">SIGGRAPH, 2024</p>
+          <p class="pub-links">
+            <a href="https://ambientgaussian.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+
+            <span class="pub-links-sep"></span>
+
+            <a href="https://arxiv.org/pdf/2406.09395" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+      <!-- SpecNeRF -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="https://limacv.github.io/SpecNeRF_web/images/teaser.jpg"
+            alt="SpecNeRF project teaser image">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              SpecNeRF: Gaussian Directional Encoding for Specular Reflections
+            </span>
+          </p>
+          <p class="pub-authors">
+            Li Ma, Vasu Agrawal, Haithem Turki, Changil Kim,
+            <span class="author-me">Chen Gao</span>, Pedro V. Sander,
+            Michael Zollhöfer, Christian Richardt
+          </p>
+          <p class="pub-venue">CVPR, 2024</p>
+          <p class="pub-links">
+            <a href="https://limacv.github.io/SpecNeRF_web/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+
+            <span class="pub-links-sep"></span>
+
+            <a href="https://arxiv.org/pdf/2312.13102" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- OmnimatteRF -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://omnimatte-rf.github.io/demo/demo4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              OmnimatteRF: Robust Omnimatte with 3D Background Modeling
+            </span>
+          </p>
+          <p class="pub-authors">
+            Geng Lin, <span class="author-me">Chen Gao</span>, Jia-Bin Huang,
+            Changil Kim, Yipeng Wang, Matthias Zwicker, Ayush Saraf
+          </p>
+          <p class="pub-venue">ICCV, 2023</p>
+          <p class="pub-links">
+            <a href="https://omnimatte-rf.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+
+            <span class="pub-links-sep"></span>
+
+            <a href="https://arxiv.org/pdf/2309.07749.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+
+            <span class="pub-links-sep"></span>
+
+            <a href="https://github.com/facebookresearch/OmnimatteRF" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- LocalRF -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://localrf.github.io/videos/forest1_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Progressively Optimized Local Radiance Fields for Robust View Synthesis
+            </span>
+          </p>
+          <p class="pub-authors">
+            Andreas Meuleman, Yu-Lun Liu, <span class="author-me">Chen Gao</span>,
+            Jia-Bin Huang, Changil Kim, Min H. Kim, Johannes Kopf
+          </p>
+          <p class="pub-venue">CVPR, 2023</p>
+          <p class="pub-links">
+            <a href="https://localrf.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://localrf.github.io/localrf.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/facebookresearch/localrf" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Robust Dynamic Radiance Fields -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://robust-dynrf.github.io/static/videos/outputvideo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Robust Dynamic Radiance Fields
+            </span>
+          </p>
+          <p class="pub-authors">
+            Yu-Lun Liu, <span class="author-me">Chen Gao</span>, Andreas Meuleman,
+            Hung-Yu Tseng, Ayush Saraf, Changil Kim,
+            Yung-Yu Chuang, Johannes Kopf, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">CVPR, 2023</p>
+          <p class="pub-links">
+            <a href="https://robust-dynrf.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2301.02239.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/facebookresearch/robust-dynrf" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Dynamic View Synthesis -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://free-view-video.github.io/results/free-view-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Dynamic View Synthesis from Dynamic Monocular Video
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Ayush Saraf, Johannes Kopf, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">ICCV, 2021</p>
+          <p class="pub-links">
+            <a href="https://free-view-video.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2105.06468.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/gaochen315/DynamicNeRF" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Portrait NeRF -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="assets/img/pnerf.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Portrait Neural Radiance Fields from a Single Image
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Yichang Shih, Wei-Sheng Lai,
+            Chia-Kai Liang, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">arXiv, 2020</p>
+          <p class="pub-links">
+            <a href="https://portrait-nerf.github.io/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2012.05903.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Flow-edge Guided Video Completion -->
+      <div class="pub-card pub-highlight">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="https://gaochen315.github.io/FGVC/ECCV2020/teaser.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Flow-edge Guided Video Completion
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Ayush Saraf, Jia-Bin Huang, Johannes Kopf
+          </p>
+          <p class="pub-venue">ECCV, 2020</p>
+          <p class="pub-links">
+            <a href="https://gaochen315.github.io/FGVC/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2009.01835.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/vt-vl-lab/FGVC" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- DRG -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <video class="img-responsive" muted autoplay loop playsinline>
+            <source src="assets/img/DRG.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              DRG: Dual Relation Graph for Human-Object Interaction Detection
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Jiarui Xu, Yuliang Zou, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">ECCV, 2020</p>
+          <p class="pub-links">
+            <a href="http://chengao.vision/DRG/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2008.11714.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/vt-vl-lab/DRG" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- NAS-DIP -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="assets/img/NAS-DIP.gif" alt="NAS-DIP project teaser animation">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              NAS-DIP: Learning Deep Image Prior with Neural Architecture Search
+            </span>
+          </p>
+          <p class="pub-authors">
+            Yun-Chun Chen*, <span class="author-me">Chen Gao*</span>, Esther Robb, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">ECCV, 2020</p>
+          <p class="pub-links">
+            <a href="https://yunchunchen.github.io/NAS-DIP/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/pdf/2008.11713.pdf" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/YunChunChen/NAS-DIP-pytorch" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- SDN -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="assets/img/SDN.gif" alt="SDN project teaser animation">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Why Can't I Dance in the Mall? Learning to Mitigate Scene Bias in Action Recognition
+            </span>
+          </p>
+          <p class="pub-authors">
+            Jinwoo Choi, <span class="author-me">Chen Gao</span>, Joseph Messou, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">NeurIPS, 2019</p>
+          <p class="pub-links">
+            <a href="http://chengao.vision/SDN/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="http://papers.nips.cc/paper/8372-why-cant-i-dance-in-the-mall-learning-to-mitigate-scene-bias-in-action-recognition.pdf"
+              target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/vt-vl-lab/SDN" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- iCAN -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="assets/img/HOI.gif"
+            alt="iCAN human-object interaction project teaser animation">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              iCAN: Instance-Centric Attention Network for Human-Object Interaction Detection
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Yuliang Zou, Jia-Bin Huang
+          </p>
+          <p class="pub-venue">BMVC, 2018</p>
+          <p class="pub-links">
+            <a href="https://gaochen315.github.io/iCAN/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/abs/1808.10437" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/vt-vl-lab/iCAN" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- pRPCA -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="assets/img/pRPCA.gif" alt="Panoramic Robust PCA project teaser animation">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Panoramic Robust PCA for Foreground-Background Separation on Noisy, Free-Motion Camera Video
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao*</span>, Brian E. Moore*, Raj Rao Nadakuditi
+          </p>
+          <p class="pub-venue">IEEE Transactions on Computational Imaging, 2019</p>
+          <p class="pub-links">
+            <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/abs/1712.06229" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Augmented RPCA -->
+      <div class="pub-card">
+        <div class="pub-media">
+          <img class="img-responsive" src="assets/img/RPCA.gif" alt="Augmented Robust PCA project teaser animation">
+        </div>
+        <div class="pub-content">
+          <p class="pub-title">
+            <span class="pub-title-text">
+              Augmented Robust PCA For Foreground-Background Separation on Noisy, Moving Camera Video
+            </span>
+          </p>
+          <p class="pub-authors">
+            <span class="author-me">Chen Gao</span>, Brian E. Moore, Raj Rao Nadakuditi
+          </p>
+          <p class="pub-venue">GlobalSIP, 2017 (Oral)</p>
+          <p class="pub-links">
+            <a href="https://gaochen315.github.io/pRPCA/" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-project"></use>
+              </svg>
+              Project
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://arxiv.org/abs/1709.09328" target="_blank" rel="noopener">
+              <svg class="link-ico outline" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-doc"></use>
+              </svg>
+              arXiv
+            </a>
+            <span class="pub-links-sep"></span>
+            <a href="https://github.com/gaochen315/panoramicRPCA" target="_blank" rel="noopener">
+              <svg class="link-ico solid" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+              code
+            </a>
+          </p>
+        </div>
+      </div>
+
     </div>
 
     <hr>
@@ -924,12 +909,12 @@
 
   <!-- EDUCATION DESCRIPTION -->
   <section id="education" class="container desc">
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-0">
+    <div class="section-split">
+      <div class="section-heading">
         <h5>EDUCATION</h5>
       </div>
 
-      <div class="col-lg-10">
+      <div class="section-main">
         <div class="edu-list">
 
           <div class="edu-item">
@@ -961,16 +946,13 @@
     </div>
     <hr>
   </section>
-
-
-
   <section class="container desc">
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-0">
+    <div class="section-split">
+      <div class="section-heading">
         <h5>INDUSTRY</h5>
       </div>
 
-      <div class="col-lg-10">
+      <div class="section-main">
         <div class="edu-list">
 
           <div class="edu-item">
@@ -1010,16 +992,13 @@
     </div>
     <hr>
   </section>
-
-
-
   <section id="misc" class="container desc">
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-0">
+    <div class="section-split">
+      <div class="section-heading">
         <h5>MISC</h5>
       </div>
 
-      <div class="col-lg-10 misc-content">
+      <div class="section-main misc-content">
 
         <div class="misc-item">
           <p>
@@ -1103,31 +1082,26 @@
             If you're in Seattle and enjoy outdoor activities, feel free to contact me.
           </p>
         </div>
-
-
       </div>
     </div>
   </section>
-
-
-
   <footer id="contact">
     <div id="footwrap">
       <div class="container">
-        <div class="row">
+        <div class="footer-layout">
 
-          <div class="col-lg-2 col-lg-offset-0">
+          <div class="footer-col footer-heading">
             <h5>CONTACT</h5>
           </div>
 
-          <div class="col-lg-5">
+          <div class="footer-col footer-main">
             <p>
               <b>Email</b><br />
               gaochen315@gmail.com
             </p>
           </div>
 
-          <div class="col-lg-3 col-lg-offset-2">
+          <div class="footer-col footer-social-col">
             <p><span class="footer-label">SOCIAL LINKS</span></p>
             <p class="footer-social">
               <a href="https://www.facebook.com/ChenGao315" aria-label="Facebook profile"><i class="icon-facebook"
@@ -1138,9 +1112,9 @@
                   aria-hidden="true"></i></a>
             </p>
           </div>
-
         </div>
       </div>
+    </div>
   </footer>
 
 

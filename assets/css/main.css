@@ -14,6 +14,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  overflow-anchor: none;
 }
 
 .centered {
@@ -116,8 +117,7 @@ p {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   #section-topbar ul#nav a {
     padding: 12px 12px;
     font-size: 12px;
@@ -137,13 +137,10 @@ section[id] {
   margin-bottom: 40px;
 }
 
-/* Avoid Bootstrap's breakpoint width jumps on desktop/tablet.
-   Keep a fluid container that grows smoothly with viewport width. */
-@media (min-width: 768px) {
-  .container {
-    width: calc(100% - 80px);
-    max-width: 1140px;
-  }
+/* Fluid container across all widths to avoid breakpoint snapping. */
+.container {
+  width: min(1140px, calc(100% - clamp(24px, 6vw, 80px)));
+  max-width: none;
 }
 
 
@@ -155,7 +152,7 @@ section[id] {
   background: #333 url(../img/header-bg.jpg) no-repeat center center;
   background-size: cover;
   margin-top: 40px;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -210,12 +207,27 @@ section[id] {
   color: #fff;
 }
 
-#intro .col-lg-9 {
-  max-width: 780px;
+#intro .about-row {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+#intro .about-media {
+  flex: 0 0 160px;
+  width: 160px;
+  min-width: 160px;
+}
+
+#intro .about-body {
+  min-width: 0;
+  max-width: none;
+  overflow-wrap: anywhere;
 }
 
 .about-avatar {
-  max-width: 160px;
+  width: 100%;
+  max-width: none;
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -225,7 +237,7 @@ section[id] {
 }
 
 .about-intro {
-  max-width: 680px;
+  max-width: none;
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 28px;
@@ -235,6 +247,19 @@ section[id] {
 /* ==================================================
    7. News
    ================================================== */
+
+.news-layout {
+  display: block;
+}
+
+.news-heading {
+  margin-bottom: 10px;
+}
+
+.news-main {
+  width: 100%;
+  padding-left: 0;
+}
 
 .news-list {
   margin-top: 4px;
@@ -293,9 +318,10 @@ section[id] {
   padding: 20px 18px;
   margin-bottom: 24px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: clamp(140px, 18vw, 240px) minmax(0, 1fr);
+  column-gap: clamp(8px, 1.4vw, 20px);
+  align-items: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -318,12 +344,13 @@ section[id] {
 }
 
 .pub-media {
-  width: 280px;
-  max-width: 100%;
-  flex: 0 0 280px;
-  margin-right: 24px;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin-right: 0;
   padding: 0;
   aspect-ratio: 16 / 9;
+  align-self: center;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -333,38 +360,18 @@ section[id] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   border-radius: 10px;
 }
 
 .pub-content {
-  flex: 1;
+  width: 100%;
+  min-width: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .pub-card {
-    flex-direction: column;
-  }
-
-  .pub-media {
-    width: 100%;
-    flex: 0 0 auto;
-    margin-right: 0;
-    margin-bottom: 20px;
-    max-width: none;
-    aspect-ratio: auto;
-    overflow: visible;
-  }
-
-  .pub-media img,
-  .pub-media video {
-    height: auto;
-    object-fit: contain;
-  }
 }
 
 .pub-title-text {
@@ -413,7 +420,7 @@ section[id] {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .link-ico {
@@ -440,6 +447,27 @@ section[id] {
 .pub-links-sep {
   margin: 0 7px;
   opacity: 0.35;
+}
+
+.section-split {
+  display: block;
+}
+
+.section-heading {
+  margin-bottom: 10px;
+}
+
+.section-main {
+  width: 100%;
+  padding-left: 0;
+}
+
+.paper-header {
+  margin-bottom: 14px;
+}
+
+.paper-main {
+  width: 100%;
 }
 
 
@@ -521,6 +549,33 @@ section[id] {
 #footwrap p,
 #footwrap h5 {
   color: #fff;
+}
+
+.footer-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.footer-col {
+  min-width: 0;
+}
+
+.footer-heading {
+  flex: 0 0 120px;
+}
+
+.footer-main {
+  flex: 1 1 360px;
+  min-width: 280px;
+  padding-left: 0;
+}
+
+.footer-social-col {
+  flex: 0 1 220px;
+  min-width: 190px;
+  padding-left: 0;
 }
 
 .footer-social {
@@ -610,14 +665,6 @@ section[id] {
 .art-item:hover figcaption {
   opacity: 1;
 }
-
-@media (max-width: 768px) {
-  .art-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 18px;
-  }
-}
-
 
 /* ==================================================
    13. Motion
