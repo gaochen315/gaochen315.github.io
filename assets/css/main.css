@@ -220,6 +220,7 @@ section[id] {
 }
 
 #intro .about-body {
+  flex: 1 1 0;
   min-width: 0;
   max-width: none;
   overflow-wrap: anywhere;
@@ -241,6 +242,20 @@ section[id] {
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 28px;
+}
+
+@media (max-width: 640px) {
+  #intro .about-row {
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  #intro .about-media {
+    flex: 0 0 25%;
+    width: 25%;
+    min-width: 0;
+    margin-top: 10px;
+  }
 }
 
 
@@ -372,6 +387,19 @@ section[id] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .pub-card {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+    align-items: start;
+  }
+
+  .pub-media {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .pub-title-text {
@@ -514,6 +542,18 @@ section[id] {
 
 .edu-degree {
   opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .edu-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+  .edu-item {
+    width: auto;
+  }
 }
 
 
