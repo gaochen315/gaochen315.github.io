@@ -154,6 +154,92 @@
     <hr>
   </section>
 
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" aria-label="Close">&times;</span>
+    <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork">
+    <button class="lightbox-next" aria-label="Next">&#10095;</button>
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('.art-item a');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const closeBtn = document.querySelector('.lightbox-close');
+      const prevBtn = document.querySelector('.lightbox-prev');
+      const nextBtn = document.querySelector('.lightbox-next');
+
+      let currentIndex = 0;
+      let items = [];
+
+      // Collect image data and attach listeners
+      links.forEach((link, index) => {
+        const item = {
+          href: link.getAttribute('href'),
+          caption: link.nextElementSibling ? link.nextElementSibling.innerText : ''
+        };
+        items.push(item);
+
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent standard navigation
+          openLightbox(index);
+        });
+      });
+
+      function openLightbox(index) {
+        currentIndex = index;
+        updateLightbox();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent page scrolling
+      }
+
+      function updateLightbox() {
+        lightboxImg.src = items[currentIndex].href;
+        lightboxCaption.innerText = items[currentIndex].caption;
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Restore page scrolling
+      }
+
+      function nextImage(e) {
+        if(e) e.stopPropagation();
+        currentIndex = (currentIndex + 1) % items.length;
+        updateLightbox();
+      }
+
+      function prevImage(e) {
+        if(e) e.stopPropagation();
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateLightbox();
+      }
+
+      // Interactivity
+      closeBtn.addEventListener('click', closeLightbox);
+      nextBtn.addEventListener('click', nextImage);
+      prevBtn.addEventListener('click', prevImage);
+
+      // Close when clicking empty space
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox || e.target === lightboxImg) {
+          closeLightbox();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function (e) {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      });
+    });
+  </script>
 </body>
 
 </html>

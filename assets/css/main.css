@@ -770,3 +770,97 @@ html {
   opacity: 1;
   margin-bottom: 20px;
 }
+
+/* ==================================================
+   14. Lightbox
+   ================================================== */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+  animation: lightboxZoom 0.3s ease;
+}
+
+@keyframes lightboxZoom {
+  from {transform: scale(0.9); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+.lightbox-caption {
+  color: #e0e0e0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 100001;
+  line-height: 1;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  color: #f85c37;
+  text-decoration: none;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.2s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.lightbox-prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.lightbox-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background-color: rgba(248, 92, 55, 0.8);
+}
