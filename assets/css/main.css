@@ -7,7 +7,7 @@
    ================================================== */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #faf7f2;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -153,7 +153,7 @@ section[id] {
   background-size: cover;
   margin-top: 40px;
   padding-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -177,19 +177,27 @@ section[id] {
 }
 
 .hero-verse-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 14px;
-  line-height: 1.65;
-  color: #ffffff;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.88);
   margin: 0;
   text-align: right;
+  letter-spacing: 0.02em;
 }
 
 .hero-verse-ref {
-  font-size: 14px;
-  margin-top: 8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 10px;
   margin-bottom: 0;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
   text-align: right;
+  letter-spacing: 0.03em;
 }
 
 
@@ -576,82 +584,7 @@ section[id] {
 }
 
 
-/* ==================================================
-   11. Footer
-   ================================================== */
 
-#footwrap {
-  background: #1a252f;
-  padding: 48px 0 32px;
-  margin-top: 56px;
-}
-
-#footwrap p,
-#footwrap h5 {
-  color: #fff;
-}
-
-.footer-layout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-.footer-col {
-  min-width: 0;
-}
-
-.footer-heading {
-  flex: 0 0 120px;
-}
-
-.footer-main {
-  flex: 1 1 360px;
-  min-width: 280px;
-  padding-left: 0;
-}
-
-.footer-social-col {
-  flex: 0 1 220px;
-  min-width: 190px;
-  padding-left: 0;
-}
-
-.footer-social {
-  margin-top: 10px;
-}
-
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  color: #aebdc1;
-  margin-right: 12px;
-  font-size: 16px;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-.footer-social a:hover {
-  background: #4ca1af;
-  color: #fff;
-  transform: translateY(-3px);
-}
-
-.footer-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #5c707c;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
 
 
 /* ==================================================
@@ -718,4 +651,122 @@ html {
   html {
     scroll-behavior: auto;
   }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Scroll-triggered reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children within a group */
+.reveal-stagger>.reveal:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.reveal-stagger>.reveal:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.reveal-stagger>.reveal:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.reveal-stagger>.reveal:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+.reveal-stagger>.reveal:nth-child(5) {
+  transition-delay: 0.32s;
+}
+
+/* National Parks Progress & List */
+.parks-progress {
+  margin: 1.5rem 0 1rem;
+}
+
+.parks-counter {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.parks-visited {
+  color: #333;
+  font-weight: 700;
+}
+
+.parks-total {
+  font-weight: 700;
+}
+
+.parks-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.parks-bar-fill {
+  height: 100%;
+  background-color: #f85c37;
+  /* Orange accent */
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.parks-toggle {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.parks-toggle:hover {
+  color: #f85c37;
+}
+
+.parks-toggle::after {
+  content: "▾";
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.parks-toggle.open::after {
+  transform: rotate(180deg);
+}
+
+.parks-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+  margin: 0;
+}
+
+.parks-list.open {
+  max-height: 800px;
+  /* Large enough to hold the list */
+  opacity: 1;
+  margin-bottom: 20px;
 }
