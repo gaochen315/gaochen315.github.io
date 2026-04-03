@@ -200,6 +200,27 @@ section[id] {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 54px;
+    padding-bottom: 2px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
+
+  .hero-verse-text {
+    font-size: 13px;
+  }
+}
+
 
 /* ==================================================
    6. About
@@ -207,7 +228,7 @@ section[id] {
 
 #intro {
   background: #2c3e50;
-  padding: 60px 0;
+  padding: 24px 0;
   color: #fff;
 }
 
@@ -271,17 +292,8 @@ section[id] {
    7. News
    ================================================== */
 
-.news-layout {
-  display: block;
-}
-
 .news-heading {
   margin-bottom: 10px;
-}
-
-.news-main {
-  width: 100%;
-  padding-left: 0;
 }
 
 .news-list {
@@ -355,11 +367,6 @@ section[id] {
   border-color: rgba(31, 41, 55, 0.16);
 }
 
-.pub-card:before,
-.pub-card:after {
-  display: none;
-}
-
 .pub-highlight {
   background: #fffbe6;
   border: 1px solid rgba(230, 200, 120, 0.28);
@@ -410,15 +417,30 @@ section[id] {
   }
 }
 
+.pub-title {
+  margin-bottom: 6px;
+}
+
+.pub-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-title-link:hover .pub-title-text,
+.pub-title-link:focus .pub-title-text {
+  color: #f85c37;
+}
+
 .pub-title-text {
   font-weight: 800;
   font-size: 17px;
-  line-height: 1.38;
+  line-height: 1.34;
   color: #1f2a37;
+  transition: color 0.15s ease;
 }
 
 .pub-content p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .pub-content p:last-child {
@@ -427,15 +449,26 @@ section[id] {
 
 .pub-authors {
   font-size: 14px;
-  line-height: 1.45;
+  line-height: 1.5;
   font-weight: 400;
-  color: #667085;
+  color: #4b5563;
   letter-spacing: 0.01em;
 }
 
+.pub-authors a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.pub-authors a:hover,
+.pub-authors a:focus {
+  color: #f85c37;
+}
+
 .pub-authors .author-me {
-  font-weight: 700;
-  color: #000;
+  font-weight: 800;
+  color: #111827;
 }
 
 .pub-venue {
@@ -443,13 +476,15 @@ section[id] {
   font-weight: 600;
   font-style: italic;
   color: #475467;
+  margin-bottom: 8px;
 }
 
 .pub-links {
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.55;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .pub-links a {
@@ -485,25 +520,12 @@ section[id] {
   opacity: 0.35;
 }
 
-.section-split {
-  display: block;
-}
-
 .section-heading {
   margin-bottom: 10px;
 }
 
-.section-main {
-  width: 100%;
-  padding-left: 0;
-}
-
 .paper-header {
   margin-bottom: 14px;
-}
-
-.paper-main {
-  width: 100%;
 }
 
 
@@ -671,62 +693,61 @@ html {
   transform: translateY(0);
 }
 
-/* Stagger children within a group */
-.reveal-stagger>.reveal:nth-child(1) {
-  transition-delay: 0s;
-}
-
-.reveal-stagger>.reveal:nth-child(2) {
-  transition-delay: 0.08s;
-}
-
-.reveal-stagger>.reveal:nth-child(3) {
-  transition-delay: 0.16s;
-}
-
-.reveal-stagger>.reveal:nth-child(4) {
-  transition-delay: 0.24s;
-}
-
-.reveal-stagger>.reveal:nth-child(5) {
-  transition-delay: 0.32s;
-}
-
 /* National Parks Progress & List */
 .parks-progress {
   margin: 1.5rem 0 1rem;
 }
 
 .parks-counter {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 6px;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(248, 92, 55, 0.08);
+  border: 1px solid rgba(248, 92, 55, 0.16);
+  color: #7a3d2e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.parks-count {
+  color: #8f2f1c;
+  font-weight: 800;
+}
+
+.parks-label {
+  color: #7a3d2e;
+  font-weight: 600;
 }
 
 .parks-visited {
-  color: #333;
-  font-weight: 700;
+  color: inherit;
+  font-weight: inherit;
 }
 
 .parks-total {
-  font-weight: 700;
+  color: inherit;
+  font-weight: inherit;
 }
 
 .parks-bar {
   width: 100%;
-  height: 8px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
+  height: 10px;
+  background-color: #eadfd4;
+  border-radius: 999px;
   overflow: hidden;
 }
 
 .parks-bar-fill {
   height: 100%;
-  background-color: #f85c37;
-  /* Orange accent */
-  border-radius: 4px;
+  background: linear-gradient(90deg, #f85c37 0%, #ff8b5f 100%);
+  border-radius: 999px;
   transition: width 1s ease-out;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35) inset;
 }
 
 .parks-toggle {
@@ -802,8 +823,15 @@ html {
 }
 
 @keyframes lightboxZoom {
-  from {transform: scale(0.9); opacity: 0;}
-  to {transform: scale(1); opacity: 1;}
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .lightbox-caption {
