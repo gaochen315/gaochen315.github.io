@@ -11,7 +11,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #555;
+  color: #4a4a4a;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   overflow-anchor: none;
@@ -28,7 +28,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
+  color: #7a7a7a;
   text-decoration: none;
   outline: 0;
 }
@@ -52,7 +52,7 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  color: #333;
+  color: #1f2a37;
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -98,7 +98,7 @@ p {
   display: block;
   padding: 12px 24px;
   font-family: "Raleway", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
@@ -161,7 +161,7 @@ section[id] {
   font-size: 80px;
   font-weight: 300;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -174,7 +174,7 @@ section[id] {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero-verse-text {
@@ -193,7 +193,7 @@ section[id] {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
@@ -218,7 +218,7 @@ section[id] {
   }
 
   .hero-verse-text {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -269,7 +269,7 @@ section[id] {
 
 .about-intro {
   max-width: none;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
   margin-bottom: 28px;
 }
@@ -419,7 +419,9 @@ section[id] {
 }
 
 .pub-title {
-  margin-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.125;
 }
 
 .pub-title-link {
@@ -427,21 +429,22 @@ section[id] {
   text-decoration: none;
 }
 
-.pub-title-link:hover .pub-title-text,
-.pub-title-link:focus .pub-title-text {
-  color: #f85c37;
-}
-
 .pub-title-text {
-  font-weight: 800;
-  font-size: 17px;
-  line-height: 1.34;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.125;
+  letter-spacing: 0;
   color: #1f2a37;
   transition: color 0.15s ease;
 }
 
 .pub-content p {
-  margin-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.pub-title+.pub-authors {
+  margin-top: 1px;
 }
 
 .pub-content p:last-child {
@@ -449,43 +452,47 @@ section[id] {
 }
 
 .pub-authors {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.46;
   font-weight: 400;
-  color: #4b5563;
-  letter-spacing: 0.01em;
+  color: #4a4a4a;
+  letter-spacing: 0;
 }
 
 .pub-authors a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.15s ease;
 }
 
 .pub-authors a:hover,
 .pub-authors a:focus {
-  color: #f85c37;
+  color: inherit;
 }
 
 .pub-authors .author-me {
-  font-weight: 800;
-  color: #111827;
+  font-weight: 600;
+  color: #1f2a37;
 }
 
 .pub-venue {
-  font-size: 14px;
-  font-weight: 600;
-  font-style: italic;
-  color: #475467;
-  margin-bottom: 8px;
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+  color: #7a7a7a;
+  letter-spacing: 0;
+  margin-bottom: 7px;
 }
 
 .pub-links {
   font-size: 12px;
   line-height: 1.55;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  padding-top: 8px;
+  margin-bottom: 0;
+  color: #4a4a4a;
 }
 
 .pub-links a {
@@ -493,6 +500,12 @@ section[id] {
   align-items: center;
   gap: 5px;
   white-space: normal;
+  text-decoration: none;
+}
+
+.pub-links a:hover,
+.pub-links a:focus {
+  color: inherit;
 }
 
 .link-ico {
@@ -598,7 +611,7 @@ section[id] {
 
 .misc-title {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   color: #1f2a37;
 }
 
@@ -652,7 +665,7 @@ section[id] {
   background: rgba(0, 0, 0, 0.45);
   font-size: 14px;
   line-height: 1.3;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   opacity: 0;
   transition: opacity 0.25s ease;
@@ -709,7 +722,7 @@ html {
   background: rgba(248, 92, 55, 0.08);
   border: 1px solid rgba(248, 92, 55, 0.16);
   color: #7a3d2e;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.01em;
@@ -754,7 +767,7 @@ html {
 .parks-toggle {
   background: none;
   border: none;
-  color: #666;
+  color: #7a7a7a;
   font-size: 14px;
   padding: 0;
   cursor: pointer;
@@ -869,7 +882,7 @@ html {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 24px;
   transition: 0.2s;
