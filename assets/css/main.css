@@ -35,8 +35,10 @@ a:focus {
 
 hr {
   border: 0;
-  border-top: 1px solid #ccc;
-  margin-top: 32px;
+  border-top: 1px solid #ddd;
+  /* Match .container width and centering */
+  width: min(1140px, calc(100% - clamp(24px, 6vw, 80px)));
+  margin: 24px auto 0;
 }
 
 
@@ -132,9 +134,20 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
+/* Base spacing for all content sections */
 .container.desc {
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* Offset top margin for News to account for Bio section's internal padding */
+#news.container.desc {
+  margin-top: 16px;
+}
+
+/* Tighten spacing between a separator line and the following title */
+hr + .container.desc {
+  margin-top: 16px;
 }
 
 /* Fluid container across all widths to avoid breakpoint snapping. */
@@ -293,8 +306,28 @@ section[id] {
    7. News
    ================================================== */
 
-.news-heading {
-  margin-bottom: 10px;
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h5 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-bottom: 0;
+}
+
+.section-heading h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 40px;
+  background-color: #f85c37;
+  border-radius: 2px;
 }
 
 .news-list {
@@ -501,11 +534,13 @@ section[id] {
   gap: 5px;
   white-space: normal;
   text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .pub-links a:hover,
 .pub-links a:focus {
-  color: inherit;
+  color: #f85c37;
+  transform: translateY(-2px);
 }
 
 .link-ico {
@@ -534,13 +569,7 @@ section[id] {
   opacity: 0.35;
 }
 
-.section-heading {
-  margin-bottom: 10px;
-}
 
-.paper-header {
-  margin-bottom: 14px;
-}
 
 
 
@@ -695,16 +724,14 @@ html {
   }
 }
 
-/* Scroll-triggered reveal */
+/* Scroll-triggered reveal effect */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.8s ease;
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* National Parks Progress & List */
