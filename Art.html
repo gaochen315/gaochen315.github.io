@@ -60,7 +60,7 @@
         <h1 class="hero-title">Chen Gao | 髙諶</h1>
 
         <p class="hero-subtitle">
-          Research Scientist at Meta Reality Labs
+          Senior Research Scientist at Waymo
         </p>
 
         <div class="hero-verse">
@@ -208,13 +208,13 @@
       }
 
       function nextImage(e) {
-        if(e) e.stopPropagation();
+        if (e) e.stopPropagation();
         currentIndex = (currentIndex + 1) % items.length;
         updateLightbox();
       }
 
       function prevImage(e) {
-        if(e) e.stopPropagation();
+        if (e) e.stopPropagation();
         currentIndex = (currentIndex - 1 + items.length) % items.length;
         updateLightbox();
       }
