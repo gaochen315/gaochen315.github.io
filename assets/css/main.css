@@ -343,7 +343,6 @@ hr+.container.desc {
 .news-tag {
   width: 90px;
   flex-shrink: 0;
-  opacity: 0.85;
 }
 
 .news-text {
@@ -357,6 +356,30 @@ hr+.container.desc {
   color: #4a4a4a;
   font-weight: 500;
 }
+
+/* Cyclic Earth Tones for News Dates */
+.news-row:nth-child(4n+1) .news-date {
+  color: #c2593a;
+}
+
+/* Brick Red */
+.news-row:nth-child(4n+2) .news-date {
+  color: #ab7c43;
+}
+
+/* Warm Ochre */
+.news-row:nth-child(4n+3) .news-date {
+  color: #5b6b55;
+}
+
+/* Olive Gray */
+.news-row:nth-child(4n+4) .news-date {
+  color: #4a5e6b;
+}
+
+/* Slate Blue */
+
+
 
 
 /* ==================================================
@@ -554,12 +577,12 @@ hr+.container.desc {
 
 .edu-list {
   display: flex;
-  gap: 40px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
 .edu-item {
-  width: 160px;
+  width: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,8 +607,8 @@ hr+.container.desc {
 }
 
 .edu-school {
-  min-height: 2.6em;
   font-weight: 400;
+  margin-bottom: 2px;
 }
 
 .edu-degree {
