@@ -102,15 +102,19 @@
 
 
 
-  <header class="hero">
+  <header class="hero home-hero">
     <div class="container">
       <div class="hero-content centered">
 
-        <h1 class="hero-title">Chen Gao | 髙諶</h1>
-
-        <p class="hero-subtitle">
-          Senior Research Scientist at Waymo
-        </p>
+        <div class="hero-profile">
+          <img class="hero-avatar" src="assets/img/chengao.jpg" alt="Portrait of Chen Gao">
+          <div class="hero-identity">
+            <h1 class="hero-title">Chen Gao | 髙諶</h1>
+            <p class="hero-subtitle">
+              Senior Research Scientist at Waymo
+            </p>
+          </div>
+        </div>
 
         <div class="hero-verse">
           <p class="hero-verse-text">
@@ -139,6 +143,14 @@
 
           <!-- Text -->
           <div class="about-body">
+            <p class="about-links">
+              <a href="mailto:gaochen315@gmail.com">Email</a><span class="about-link-separator" aria-hidden="true"> / </span>
+              <a href="Files/CV_ChenGao.pdf">CV</a><span class="about-link-separator" aria-hidden="true"> / </span>
+              <a href="https://scholar.google.com/citations?user=xRsWVc4AAAAJ&amp;hl=en">Scholar</a><span class="about-link-separator" aria-hidden="true"> / </span>
+              <a href="https://twitter.com/gaochen315">Twitter</a><span class="about-link-separator" aria-hidden="true"> / </span>
+              <a href="https://github.com/gaochen315">GitHub</a>
+            </p>
+
             <p class="about-intro">
               I am a senior research scientist at Waymo, where I work on 3D/4D simulation and perception for autonomous
               driving. Prior to Waymo, I was a researcher at Meta, focusing on high-fidelity 3D/4D
@@ -152,13 +164,6 @@
               B.S. from the University of Michigan and Oregon State University.
             </p>
 
-            <p class="about-links">
-              <a href="mailto:gaochen315@gmail.com">Email</a> &nbsp;/&nbsp;
-              <a href="Files/CV_ChenGao.pdf">CV</a> &nbsp;/&nbsp;
-              <a href="https://scholar.google.com/citations?user=xRsWVc4AAAAJ&amp;hl=en">Scholar</a> &nbsp;/&nbsp;
-              <a href="https://twitter.com/gaochen315">Twitter</a> &nbsp;/&nbsp;
-              <a href="https://github.com/gaochen315">Github</a>
-            </p>
           </div>
 
         </div>
@@ -309,8 +314,8 @@
       <!-- Textured Gaussians -->
       <div class="pub-card reveal">
         <div class="pub-media">
-          <video class="img-responsive lazy-video" muted loop playsinline preload="none">
-            <source src="https://jbhuang0604.github.io/images/projects/arXiv%202024%20Textured%20Gaussians.mp4"
+          <video class="img-responsive lazy-video" aria-label="Textured Gaussians reconstruction of the Children's Art scene" muted loop playsinline preload="none">
+            <source src="https://textured-gaussians.github.io/static/videos/supp/custom-children_art_Ours_1.mp4"
               type="video/mp4">
           </video>
         </div>
@@ -1168,22 +1173,45 @@
   <section id="misc" class="container desc">
     <div class="section-split reveal">
       <div class="section-heading">
-        <h5>MISC</h5>
+        <h5>BEYOND RESEARCH</h5>
       </div>
 
-      <div class="section-main misc-content">
+      <div class="section-main misc-content personal-layout">
 
-        <div class="misc-item">
-          <p>
-            <span class="misc-title">Road Trip</span>
+        <div class="misc-item personal-painting">
+          <div class="personal-heading">
+            <h3 class="misc-title">Painting</h3>
+            <a class="personal-gallery-link" href="Art.html">View all drawings <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="personal-art-preview">
+            <figure>
+              <a href="Art.html#nagisa-and-ushio">
+                <img src="assets/arts/full/Nagisa_and_Ushio.jpg" loading="lazy" alt="My pencil drawing of Nagisa and Ushio">
+              </a>
+              <figcaption>Nagisa &amp; Ushio</figcaption>
+            </figure>
+            <figure>
+              <a href="Art.html#tomoyo-sakagami">
+                <img class="personal-art-tomoyo" src="assets/arts/full/Tomoyo_Sakagami.jpg" loading="lazy" alt="My pencil drawing of Tomoyo Sakagami">
+              </a>
+              <figcaption>Tomoyo Sakagami</figcaption>
+            </figure>
+          </div>
+          <p class="personal-description">
+            I spent six years studying figure drawing,
+            <a href="https://en.wikipedia.org/wiki/Chinese_painting" target="_blank" rel="noopener noreferrer">traditional Chinese painting</a>,
+            and <a href="https://en.wikipedia.org/wiki/Gongbi" target="_blank" rel="noopener noreferrer">Gongbi</a>,
+            specializing in <a href="https://en.wikipedia.org/wiki/Bird-and-flower_painting" target="_blank" rel="noopener noreferrer">bird-and-flower painting</a>.
+            These days, I enjoy drawing anime characters as a way to slow down and rediscover the joy of drawing I felt as a child.
           </p>
-          <p>
-            I enjoy road-trip as it's a great way to experience local customs.
-            The spectacular landscape reminds me of how great our Creator is.
-            One of my dreams is to visit all the national parks in the US.
-          </p>
+        </div>
 
-          <div class="parks-progress">
+        <div class="misc-item personal-outdoors">
+          <div class="personal-heading">
+            <h3 class="misc-title">Outdoors</h3>
+          </div>
+
+          <div class="parks-progress personal-parks">
             <div class="parks-counter">
               <span class="parks-count"><span class="parks-visited">22</span> / <span
                   class="parks-total">63</span></span>
@@ -1194,11 +1222,17 @@
             </div>
           </div>
 
+          <p class="personal-description">
+            I love exploring the outdoors. Being surrounded by mountains, forests, and wide-open landscapes always reminds me of the greatness of our Creator. One of my dreams is to visit every national park in the U.S.
+          </p>
+          <p class="personal-favorite"><span>My favorite so far</span> Bryce Canyon, Utah</p>
+
           <button class="parks-toggle"
-            onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">
-            Show list
+            aria-expanded="false" aria-controls="visited-parks"
+            onclick="var expanded = this.getAttribute('aria-expanded') !== 'true'; this.setAttribute('aria-expanded', expanded); this.classList.toggle('open', expanded); this.nextElementSibling.classList.toggle('open', expanded); this.firstChild.textContent = expanded ? 'Hide visited parks ' : 'View visited parks '">
+            View visited parks
           </button>
-          <ul class="misc-list parks-list">
+          <ul id="visited-parks" class="misc-list parks-list">
             <li>Arches - Utah</li>
             <li>Bryce Canyon - Utah (Favourite!)</li>
             <li>Canyonlands - Utah</li>
@@ -1222,40 +1256,9 @@
             <li>Yosemite - California</li>
             <li>Zion - Utah</li>
           </ul>
-        </div>
-
-        <div class="misc-item">
-          <p>
-            <span class="misc-title">Painting</span>
-          </p>
-          <p>
-            I spent 6 years learning figure sketch,
-            <a href="https://en.wikipedia.org/wiki/Chinese_painting" target="_blank" rel="noopener noreferrer">
-              traditional Chinese painting
-            </a>,
-            and
-            <a href="https://en.wikipedia.org/wiki/Gongbi" target="_blank" rel="noopener noreferrer">
-              Gongbi
-            </a>,
-            specialized in
-            <a href="https://en.wikipedia.org/wiki/Bird-and-flower_painting" target="_blank" rel="noopener noreferrer">
-              Bird-and-flower painting
-            </a>.
-            Painting has always been a way for me to slow down and find inner calm.
-            These days, I enjoy drawing anime characters as a quiet counterbalance to research, reconnecting with the
-            joy of drawing I had as a child.
-            You can find some of them
-            <a href="Art.html" target="_blank" rel="noopener noreferrer">here</a>.
-          </p>
-        </div>
-
-        <div class="misc-item">
-          <p>
-            <span class="misc-title">Activities</span>
-          </p>
-          <p>
-            I regularly engage in hiking, paddleboarding, and snowboarding.
-            If you're in Seattle and enjoy outdoor activities, feel free to contact me.
+          <p class="personal-activities">
+            I also enjoy cycling, hiking, paddleboarding, and snowboarding.
+            If you're around Seattle, <a href="mailto:gaochen315@gmail.com">let's get outdoors</a>.
           </p>
         </div>
       </div>
