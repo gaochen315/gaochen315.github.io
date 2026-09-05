@@ -6,6 +6,11 @@
    1. Global Base
    ================================================== */
 
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: #faf7f2;
   font-family: "Lato", sans-serif;
@@ -41,7 +46,6 @@ hr {
   margin: 24px auto 0;
 }
 
-
 /* ==================================================
    2. Typography
    ================================================== */
@@ -63,7 +67,6 @@ p {
   line-height: 28px;
   margin-bottom: 20px;
 }
-
 
 /* ==================================================
    3. Navigation
@@ -119,10 +122,33 @@ p {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
+#section-topbar ul#nav a[aria-current="page"],
+#section-topbar ul#nav a[aria-current="location"] {
+  color: #f85c37;
+}
+
 @media (max-width: 900px) {
   #section-topbar ul#nav a {
     padding: 12px 12px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #topbar-inner .container {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  #section-topbar ul#nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #section-topbar ul#nav a {
+    padding: 14px 6px;
+    font-size: 11px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -155,7 +181,6 @@ hr+.container.desc {
   width: min(1140px, calc(100% - clamp(24px, 6vw, 80px)));
   max-width: none;
 }
-
 
 /* ==================================================
    5. Hero
@@ -238,7 +263,6 @@ hr+.container.desc {
     font-size: 14px;
   }
 }
-
 
 /* ==================================================
    6. About
@@ -378,7 +402,6 @@ hr+.container.desc {
   }
 }
 
-
 /* ==================================================
    7. News
    ================================================== */
@@ -456,9 +479,6 @@ hr+.container.desc {
 
 /* Slate Blue */
 
-
-
-
 /* ==================================================
    8. Publications
    ================================================== */
@@ -467,7 +487,6 @@ hr+.container.desc {
   background: transparent;
   border-radius: 0;
   border: 0;
-  border-bottom: 1px solid #ddd;
   padding: 24px 0;
   margin-bottom: 0;
   box-shadow: none;
@@ -478,16 +497,12 @@ hr+.container.desc {
 }
 
 .pub-highlight {
-  background: #fffbe6;
-  border-bottom-color: rgba(230, 200, 120, 0.28);
+  background: #ffffd0;
+  margin-bottom: 10px;
 }
 
 .pub-card:first-child {
   padding-top: 6px;
-}
-
-.pub-card:last-child {
-  border-bottom: 0;
 }
 
 .pub-media {
@@ -653,10 +668,6 @@ hr+.container.desc {
   opacity: 0.35;
 }
 
-
-
-
-
 /* ==================================================
    9. Education / Industry
    ================================================== */
@@ -712,7 +723,6 @@ hr+.container.desc {
     width: auto;
   }
 }
-
 
 /* ==================================================
    10. Misc
@@ -872,9 +882,6 @@ hr+.container.desc {
 
 }
 
-
-
-
 /* ==================================================
    12. Art Gallery
    ================================================== */
@@ -926,6 +933,35 @@ hr+.container.desc {
 
 .art-item:hover figcaption {
   opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .art-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .art-item {
+    aspect-ratio: auto;
+    background: transparent;
+  }
+
+  .art-item img {
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .art-item:hover img {
+    transform: none;
+  }
+
+  .art-item figcaption {
+    position: static;
+    padding: 8px 0 0;
+    background: transparent;
+    color: #4a4a4a;
+    opacity: 1;
+  }
 }
 
 /* ==================================================
@@ -1117,6 +1153,10 @@ html {
   transition: 0.2s;
   z-index: 100001;
   line-height: 1;
+  background: transparent;
+  border: 0;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .lightbox-close:hover,
@@ -1156,4 +1196,47 @@ html {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background-color: rgba(248, 92, 55, 0.8);
+}
+
+.lightbox button:focus-visible {
+  outline: 2px solid #f85c37;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .lightbox {
+    height: 100dvh;
+    padding: 64px 12px 88px;
+  }
+
+  .lightbox-content {
+    max-width: 100%;
+    max-height: calc(100vh - 200px);
+    max-height: calc(100dvh - 200px);
+    margin-bottom: 12px;
+  }
+
+  .lightbox-close {
+    top: max(12px, env(safe-area-inset-top));
+    right: 12px;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    top: auto;
+    bottom: max(20px, env(safe-area-inset-bottom));
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+  }
+
+  .lightbox-prev {
+    left: calc(50% - 64px);
+  }
+
+  .lightbox-next {
+    right: calc(50% - 64px);
+  }
 }
