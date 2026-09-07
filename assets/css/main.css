@@ -166,6 +166,11 @@ hr+.container.desc {
    5. Hero
    ================================================== */
 
+.home-page .container,
+.home-page hr {
+  width: min(1040px, calc(100% - clamp(24px, 6vw, 80px)));
+}
+
 .hero {
   background: #333 url(../img/header-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -370,7 +375,7 @@ hr+.container.desc {
   margin-bottom: 0;
   box-shadow: none;
   display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
+  grid-template-columns: 180px minmax(0, 1fr);
   column-gap: clamp(12px, 3vw, 36px);
   align-items: center;
 }
@@ -534,6 +539,97 @@ hr+.container.desc {
 
 .pub-links-sep {
   display: none;
+}
+
+/* Reflow homepage content before side-by-side text becomes too narrow. */
+@media (max-width: 640px) {
+  .home-hero .hero-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .home-hero .hero-avatar {
+    display: block;
+    width: 64px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .home-hero .hero-identity {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .home-hero .hero-title {
+    font-size: clamp(23px, 5.8vw, 36px);
+    white-space: normal;
+  }
+
+  .home-hero .hero-subtitle {
+    margin: 8px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-hero .hero-verse {
+    margin-top: 24px;
+  }
+
+  #intro .about-media {
+    display: none;
+  }
+
+  .about-intro {
+    margin-bottom: 16px;
+  }
+
+  .about-links {
+    margin: 0;
+  }
+
+  .about-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .news-row {
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+
+  .pub-card {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+    align-items: start;
+  }
+
+  .pub-media {
+    max-width: 440px;
+    justify-self: center;
+  }
+
+  .pub-media img,
+  .pub-media video {
+    object-fit: contain;
+  }
+
+  .pub-highlight {
+    padding: 20px 12px;
+  }
+
+  .pub-links {
+    padding-top: 0;
+  }
+
+  .pub-links a {
+    min-height: 44px;
+  }
 }
 
 /* ==================================================
