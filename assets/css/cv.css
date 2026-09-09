@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro");
+
+:root {
+  color-scheme: light;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { background: #fff; }
+
+body {
+  margin: 0;
+  color: #4a4a4a;
+  background: #fff;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: inherit; }
+
+.cv-shell {
+  padding: 8px 48px 48px;
+  color: #0a0a0a;
+}
+
+#cv-content {
+  margin: 16px 32px 0;
+}
+
+.cv-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cv-header,
+.cv-row,
+.contact-row {
+  display: flex;
+  margin: -12px -12px 0;
+}
+
+.cv-header { align-items: center; }
+.header-main, .header-action { width: 50%; padding: 12px; }
+.header-action { text-align: right; }
+
+.download-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0 -8px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #363636;
+}
+
+.subtitle {
+  margin: -20px 0 0;
+  padding-bottom: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #4a4a4a;
+}
+
+.download-button {
+  display: inline-flex;
+  height: 2.5em;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background: #fff;
+  color: #363636;
+  box-shadow: none;
+  margin: 0 4px 8px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  border-color: #b5b5b5;
+  color: #363636;
+}
+
+.download-button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #3273dc;
+  outline-offset: 2px;
+}
+
+.contact-row { flex-wrap: wrap; }
+.contact-item { padding: 0 12px; white-space: nowrap; }
+
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  overflow: visible;
+  fill: currentColor;
+  vertical-align: -.125em;
+}
+
+.contact-item .icon-svg { margin-right: 0; }
+
+.cv-section-title {
+  margin: 12px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #363636;
+}
+
+.cv-row { align-items: stretch; }
+.cv-cell { padding: 12px; }
+.cv-cell-main { flex: 1 1 auto; min-width: 0; }
+.cv-cell-date { flex: 0 0 auto; margin-left: auto; text-align: right; white-space: nowrap; }
+
+.sub-row { margin-top: -12px; padding-left: 8px; }
+.sub-row .cv-cell { padding-top: 0; }
+
+.education-main .cv-cell { padding-bottom: 0; }
+.education-main .cv-cell-main { flex-basis: 66.6667%; }
+.education-detail { margin-top: -12px; padding-left: 8px; color: #7a7a7a; }
+
+.impact-main .cv-cell-main { flex-basis: 66.6667%; }
+.impact-detail { padding-left: 8px; }
+.impact-detail .cv-cell { padding-top: 0; }
+
+.muted { color: #7a7a7a; }
+.semibold { font-weight: 600; }
+
+.publication-row { break-inside: avoid; }
+.publication-number {
+  flex: 0 0 auto;
+  padding: 12px 0 12px 12px;
+  text-align: right;
+}
+
+.publication-body { flex: 1 1 auto; min-width: 0; padding: 12px; }
+.publication-title { font-weight: 600; }
+.paper-links { display: inline-flex; gap: .28em; margin-left: .32em; }
+.paper-links a { display: inline-flex; align-items: center; }
+.paper-links .icon-svg { margin: 0; }
+
+@media (max-width: 1023px) {
+  .desktop-only { display: none !important; }
+  .header-main { width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .cv-shell { padding: 8px 20px 36px; }
+  #cv-content { margin: 16px 4px 0; }
+  .cv-header { text-align: center; }
+  .contact-row { justify-content: center; }
+  .contact-item { padding-top: 2px; padding-bottom: 2px; }
+  h1 { font-size: 42px; }
+  .publication-number { padding-right: 0; }
+  .publication-body { padding-left: 8px; }
+}
+
+@media print {
+  @page { margin: 12mm; }
+  .cv-shell { padding: 0; }
+  #cv-content { margin: 0; }
+  .download-button { display: none; }
+  a { color: inherit; }
+}
