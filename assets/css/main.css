@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #faf7f2;
-  font-family: "Lato", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #4a4a4a;
@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   color: #1f2a37;
   margin-top: 0;
@@ -107,7 +107,7 @@ p {
 #section-topbar ul#nav a {
   display: block;
   padding: 12px clamp(6px, calc(2vw - 2px), 24px);
-  font-family: "Raleway", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-size: clamp(11px, calc(10px + 0.32vw), 14px);
   letter-spacing: clamp(0.4px, 0.08vw, 1px);
   font-weight: 400;
@@ -167,7 +167,9 @@ hr+.container.desc {
    ================================================== */
 
 .home-page .container,
-.home-page hr {
+.home-page hr,
+.art-page .container,
+.art-page hr {
   width: min(1040px, calc(100% - clamp(24px, 6vw, 80px)));
 }
 
@@ -181,6 +183,7 @@ hr+.container.desc {
 }
 
 .hero-title {
+  font-family: "Google Sans Flex", "Google Sans", "Noto Sans", sans-serif;
   font-size: clamp(28px, calc(5.8vw + 5px), 80px);
   font-weight: 300;
   margin: 0;
@@ -205,7 +208,7 @@ hr+.container.desc {
 }
 
 .hero-verse-text {
-  font-family: "Raleway", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 14px;
@@ -217,7 +220,7 @@ hr+.container.desc {
 }
 
 .hero-verse-ref {
-  font-family: "Raleway", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 14px;
@@ -226,6 +229,14 @@ hr+.container.desc {
   color: rgba(255, 255, 255, 0.6);
   text-align: right;
   letter-spacing: 0.03em;
+}
+
+.home-hero .hero-title,
+.home-hero .hero-subtitle,
+.home-hero .hero-verse-text,
+.home-hero .hero-verse-ref {
+  font-family: "Google Sans Flex", "Google Sans", "Noto Sans", sans-serif;
+  font-weight: 275;
 }
 
 /* ==================================================
@@ -637,28 +648,38 @@ hr+.container.desc {
    ================================================== */
 
 .edu-list {
-  display: flex;
-  gap: clamp(16px, 2.7vw, 32px);
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 24px);
 }
 
 .edu-item {
-  width: clamp(100px, 20vw, 190px);
+  width: auto;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+#education .edu-item:nth-child(2) {
+  grid-column: 3;
+}
+
+#education .edu-item:nth-child(3) {
+  grid-column: 5;
+}
+
 .edu-logo {
-  height: 90px;
-  max-width: 120px;
+  height: 82px;
+  max-width: 108px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .edu-text {
   margin: 0;
+  font-size: 15px;
   line-height: 1.35;
 }
 
@@ -674,6 +695,40 @@ hr+.container.desc {
 
 .edu-degree {
   opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .edu-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #education .edu-item:nth-child(2),
+  #education .edu-item:nth-child(3) {
+    grid-column: auto;
+  }
+
+  #industry .edu-item:nth-child(4) {
+    grid-column: 1;
+  }
+
+  #industry .edu-item:nth-child(5) {
+    grid-column: 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .edu-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #industry .edu-item:nth-child(4) {
+    grid-column: auto;
+  }
+
+  #education .edu-item:nth-child(3),
+  #industry .edu-item:nth-child(5) {
+    grid-column: 1 / -1;
+  }
 }
 
 /* ==================================================
@@ -731,7 +786,7 @@ hr+.container.desc {
 }
 
 .personal-heading .misc-title {
-  font-family: "Lato", sans-serif;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
   font-size: 20px;
   margin: 0;
 }
