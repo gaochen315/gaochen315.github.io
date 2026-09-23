@@ -396,7 +396,7 @@ hr+.container.desc {
   margin-bottom: 10px;
 }
 
-.pub-card:first-child {
+.pub-card:first-child:not(.pub-highlight) {
   padding-top: 6px;
 }
 
