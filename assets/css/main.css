@@ -207,24 +207,32 @@ hr+.container.desc {
   color: #fff;
 }
 
+.hero-verse {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
 .hero-verse-text {
   font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 12px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.88);
   margin: 0;
-  text-align: right;
-  letter-spacing: 0.02em;
+  text-align: center;
+  text-align-last: right;
+  letter-spacing: 0;
 }
 
 .hero-verse-ref {
   font-family: "Google Sans", "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 4px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   text-align: right;
@@ -587,7 +595,17 @@ hr+.container.desc {
   }
 
   .home-hero .hero-verse {
-    margin-top: 24px;
+    margin-top: 12px;
+  }
+
+  .home-hero .hero-verse-text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .home-hero .hero-verse-ref {
+    font-size: 10px;
+    margin-top: 2px;
   }
 
   #intro .about-media {
